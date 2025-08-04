@@ -11,26 +11,6 @@ import { Car, Search, Bell, User, BarChart3, TrendingUp, Filter, Settings } from
 const Dashboard = () => {
   return (
     <div className="flex h-screen bg-background">
-      {/* Modern Sidebar */}
-      <aside className="w-16 bg-sidebar border-r border-sidebar-border flex flex-col items-center py-4 space-y-4">
-        <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-          <Car className="w-5 h-5 text-accent-foreground" />
-        </div>
-        <nav className="flex flex-col space-y-3">
-          <Button variant="ghost" size="icon" className="w-10 h-10 text-sidebar-foreground hover:bg-sidebar-accent">
-            <BarChart3 className="w-5 h-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="w-10 h-10 text-sidebar-foreground hover:bg-sidebar-accent">
-            <TrendingUp className="w-5 h-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="w-10 h-10 text-sidebar-foreground hover:bg-sidebar-accent">
-            <Filter className="w-5 h-5" />
-          </Button>
-          <Button variant="ghost" size="icon" className="w-10 h-10 text-sidebar-foreground hover:bg-sidebar-accent">
-            <Settings className="w-5 h-5" />
-          </Button>
-        </nav>
-      </aside>
 
       <div className="flex-1 flex flex-col">
 
