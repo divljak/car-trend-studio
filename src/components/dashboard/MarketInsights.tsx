@@ -20,8 +20,8 @@ const PriceBracket = ({ title, hasData, data }: PriceBracketProps) => (
         <div className="space-y-3">
           {data?.map((item, index) => (
             <div key={index} className="flex justify-between items-center">
-              <span className="text-xs font-medium">{item.model}</span>
-              <span className="text-xs text-muted-foreground">{item.days} days</span>
+              <span className="text-sm font-medium">{item.model}</span>
+              <span className="text-sm text-muted-foreground">{item.days} days</span>
             </div>
           ))}
         </div>
