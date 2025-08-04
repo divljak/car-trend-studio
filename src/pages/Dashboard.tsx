@@ -26,22 +26,27 @@ const Dashboard = () => {
             {/* Top Opportunities */}
             <div className="space-y-4">
               <h2 className="text-xl font-semibold">Top Opportunities</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <OpportunityCard
                   type="hot-flip"
-                  title="Hot Flip: Skoda Octavia"
-                  subtitle="High demand this period. Sells 23 days faster than average."
-                  badge="🔥 Hot"
+                  title="Available to payout"
+                  subtitle="$6.1K will available soon"
+                  value="$16.4K"
+                  badge="Payout"
                 />
                 <OpportunityCard
                   type="market-analysis"
-                  title="Market Analysis"
-                  subtitle="No major overpricing detected in current filters."
+                  title="Today revenue"
+                  subtitle="$6.1K will available soon"
+                  value="$6.4K"
+                  badge="Payout"
                 />
                 <OpportunityCard
                   type="rising-demand"
-                  title="Rising Demand: Monitoring"
-                  subtitle="Analyzing trends for emerging opportunities."
+                  title="Today sessions"
+                  subtitle="$6.1K will available soon"
+                  value="400"
+                  badge="Payout"
                 />
               </div>
             </div>
