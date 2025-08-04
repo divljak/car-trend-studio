@@ -40,10 +40,13 @@ export const MarketInsights = () => {
   return (
     <div className="space-y-4">
       <h2 className="text-xl font-semibold">Market Insights by Price Bracket</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <PriceBracket title="Under 10,000 KM" hasData={false} />
-        <PriceBracket title="10,000 - 20,000 KM" hasData={false} />
-        <PriceBracket title="Over 20,000 KM" hasData={true} data={overTwentyKData} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <PriceBracket title="Under 10K" hasData={false} />
+        <PriceBracket title="10K - 20K" hasData={false} />
+        <PriceBracket title="20K - 30K" hasData={true} data={overTwentyKData} />
+        <PriceBracket title="30K - 40K" hasData={false} />
+        <PriceBracket title="40K - 50K" hasData={false} />
+        <PriceBracket title="50K - 60K" hasData={false} />
       </div>
     </div>
   );
