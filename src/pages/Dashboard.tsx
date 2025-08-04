@@ -49,6 +49,9 @@ const Dashboard = () => {
               </div>
             </div>
 
+            {/* Fastest Selling Table */}
+            <FastestSellingTable />
+
             {/* Market Insights */}
             <MarketInsights />
 
@@ -59,9 +62,6 @@ const Dashboard = () => {
               </div>
               <TrendingSection />
             </div>
-
-            {/* Fastest Selling Table */}
-            <FastestSellingTable />
               </div>
             </div>
           </div>
