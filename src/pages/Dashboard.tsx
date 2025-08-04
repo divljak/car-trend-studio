@@ -49,11 +49,11 @@ const Dashboard = () => {
               </div>
             </div>
 
-            {/* Fastest Selling Table */}
-            <FastestSellingTable />
-
             {/* Market Insights */}
             <MarketInsights />
+
+            {/* Fastest Selling Table */}
+            <FastestSellingTable />
 
             {/* Charts Section */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
