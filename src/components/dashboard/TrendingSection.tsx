@@ -10,7 +10,7 @@ interface TrendingItemProps {
 }
 
 const TrendingItem = ({ model, status, metric, isSuccess }: TrendingItemProps) => (
-  <div className="flex items-center justify-between p-3 rounded-lg border bg-card/50 hover:bg-card transition-colors">
+  <div className="flex items-center justify-between p-3 rounded-lg border bg-secondary hover:bg-secondary/80 transition-colors">
     <div className="space-y-1">
       <h4 className="font-medium text-base">{model}</h4>
       <p className="text-xs text-muted-foreground">{status}</p>
