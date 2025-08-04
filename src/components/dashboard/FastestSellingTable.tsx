@@ -83,7 +83,14 @@ export const FastestSellingTable = () => {
                 <TableCell>{item.avgDaysOnMarket}</TableCell>
                 <TableCell>{item.avgPrice}</TableCell>
                 <TableCell>
-                  <Badge variant="default" className="bg-success text-success-foreground">
+                  <Badge 
+                    variant={item.demandLevel === "HIGH" ? "default" : item.demandLevel === "MEDIUM" ? "secondary" : "outline"} 
+                    className={
+                      item.demandLevel === "HIGH" ? "bg-success text-success-foreground" :
+                      item.demandLevel === "MEDIUM" ? "bg-warning text-warning-foreground" :
+                      "bg-destructive text-destructive-foreground"
+                    }
+                  >
                     {item.demandLevel}
                   </Badge>
                 </TableCell>
