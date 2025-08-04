@@ -44,7 +44,7 @@ export const TrendingSection = () => {
   ];
 
   return (
-    <Card className="w-80">
+    <Card className="w-full">
       <CardHeader className="pb-3">
         <div className="flex items-center gap-2">
           <TrendingUp className="h-5 w-5 text-primary" />
