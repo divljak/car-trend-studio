@@ -1,30 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
-
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 export const FastestSellingTable = () => {
-  const fastestSelling = [
-    {
-      makeModel: "Skoda Octavia",
-      year: "2020",
-      avgDaysOnMarket: "6.8",
-      avgPrice: "21,902",
-      demandLevel: "HIGH"
-    }
-  ];
-
-  return (
-    <Card>
+  const fastestSelling = [{
+    makeModel: "Skoda Octavia",
+    year: "2020",
+    avgDaysOnMarket: "6.8",
+    avgPrice: "21,902",
+    demandLevel: "HIGH"
+  }];
+  return <Card>
       <CardHeader>
         <CardTitle>Fastest Selling Models</CardTitle>
-        <p className="text-sm text-muted-foreground">Click a row for a detailed model report.</p>
+        
       </CardHeader>
       <CardContent>
         <Table>
@@ -38,8 +26,7 @@ export const FastestSellingTable = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {fastestSelling.map((item, index) => (
-              <TableRow key={index} className="cursor-pointer hover:bg-muted/50">
+            {fastestSelling.map((item, index) => <TableRow key={index} className="cursor-pointer hover:bg-muted/50">
                 <TableCell className="font-medium">{item.makeModel}</TableCell>
                 <TableCell>{item.year}</TableCell>
                 <TableCell>{item.avgDaysOnMarket}</TableCell>
@@ -49,11 +36,9 @@ export const FastestSellingTable = () => {
                     {item.demandLevel}
                   </Badge>
                 </TableCell>
-              </TableRow>
-            ))}
+              </TableRow>)}
           </TableBody>
         </Table>
       </CardContent>
-    </Card>
-  );
+    </Card>;
 };
