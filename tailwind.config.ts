@@ -80,7 +80,11 @@ export default {
 					'3': 'hsl(var(--chart-3))',
 					'4': 'hsl(var(--chart-4))',
 					'5': 'hsl(var(--chart-5))'
-				}
+				},
+				'card-dark': 'hsl(var(--card-dark))',
+				'card-dark-foreground': 'hsl(var(--card-dark-foreground))',
+				'card-gray': 'hsl(var(--card-gray))',
+				'card-gray-foreground': 'hsl(var(--card-gray-foreground))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
