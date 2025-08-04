@@ -51,9 +51,6 @@ export const OpportunityCard = ({ type, title, subtitle, metric, value, badge }:
               {badge}
             </Badge>
           )}
-          {type === "hot-flip" && (
-            <ArrowUpRight className="h-4 w-4 text-accent opacity-60" />
-          )}
         </div>
       </CardHeader>
       <CardContent className="pt-0">
