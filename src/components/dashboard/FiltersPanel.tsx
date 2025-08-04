@@ -10,7 +10,6 @@ export const FiltersPanel = () => {
   return (
     <Card className="w-80 p-6 h-fit">
       <div className="flex items-center gap-2 mb-6">
-        <Filter className="h-5 w-5 text-primary" />
         <h2 className="text-lg font-semibold">Market Filters</h2>
       </div>
       
